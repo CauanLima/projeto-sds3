@@ -21,8 +21,8 @@ public class Seller {
 	@OneToMany(mappedBy = "seller")
 	private List<Sales> sales = new ArrayList<>();
 	
-	private Seller() {
-		
+	public Seller() {
+		super();
 	}
 
 	public List<Sales> getSales() {
